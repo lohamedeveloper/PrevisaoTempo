@@ -8,4 +8,13 @@ use Illuminate\Database\Eloquent\Model;
 class Clima extends Model
 {
     use HasFactory;
+
+    protected $fillable = [
+        'cidade_id',
+        'temperatura',
+        'sensacao_termica',
+        'data',
+        'descricao',
+        'hora'
+    ];
 }
